@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Short note — expansion plan — My Notes</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body data-search-root="../">
+<nav class="site-nav">
+  <a class="site-title" href="../index.html">My Notes</a>
+  <a href="../tags/index.html">Tags</a>
+  <a href="../references.html">References</a>
+  <input class="site-search" type="search" placeholder="Search notes…" autocomplete="off">
+</nav>
+<div id="search-results" class="hidden"></div>
+<main class="page">
+<article><h1>Short note — expansion plan</h1>
+<p>This is a short planning note. It records my intent to expand the <a href="fleetwood-mac.html">Fleetwood Mac</a> project beyond the current thematic notes by pulling in <strong>external sources gathered through web search</strong> and <strong>quantitative data tables downloaded from industry sources</strong>.</p>
+<p>Right now the project’s notes are essentially analytical prose — narrative arcs and interpretation. The aim here is to give that analysis an evidentiary and quantitative backbone, so claims about commercial success, lineup changes, and legacy can be grounded in citable sources and actual figures rather than received wisdom.</p>
+<h2>What I want to add</h2>
+<ul>
+<li><strong>Secondary sources via web search</strong> — interviews, retrospectives, biographies, and critical reappraisals to cite in the existing notes. Priority targets are the notes that currently make evaluative claims without references, e.g. <em class="wikilink-broken">commercial-success-and-the-album-sales-question</em>, <em class="wikilink-broken">fleetwood-macs-influence-and-critical-reassessment</em>, and <em class="wikilink-broken">peter-green-genius-breakdown-and-reassessment</em>.</li>
+<li><strong>Industry data tables</strong> — structured, downloadable datasets I can drop into notes as markdown tables and query with <code>sql</code>, or load in a <code>python</code> cell for charts. Candidates:
+<ul>
+<li>Album and single <strong>chart positions</strong> (Billboard, UK Official Charts).</li>
+<li><strong>Certified sales / streaming figures</strong> (RIAA, BPI, IFPI).</li>
+<li><strong>Discography metadata</strong> — release dates, labels, personnel per album — useful for the <em class="wikilink-broken">lineup-instability-as-structural-feature</em> and <em class="wikilink-broken">the-songwriting-economy-of-the-classic-lineup</em> angles.</li>
+</ul>
+</li>
+</ul>
+<h2>How it plugs into the existing notes</h2>
+<p>The download-and-analyze work should feed the notes that are inherently quantitative:</p>
+<ul>
+<li><em class="wikilink-broken">commercial-success-and-the-album-sales-question</em> — the natural home for a sales/certification table.</li>
+<li><em class="wikilink-broken">the-songwriting-economy-of-the-classic-lineup</em> — songwriting credits per member per album lend themselves to a table + chart.</li>
+<li><em class="wikilink-broken">lineup-instability-as-structural-feature</em> — a timeline of personnel by era.</li>
+</ul>
+<p>&lt;!-- TODO: pick the specific source sites and confirm which datasets are freely downloadable vs. need manual transcription --&gt;
+&lt;!-- TODO: decide table-vs-CSV for each dataset; markdown tables become queryable via CSVW, larger sets may be better as .csv files --&gt;</p>
+<h2>Next steps</h2>
+<ol>
+<li>Run web searches for authoritative secondary sources and file the best as project sources.</li>
+<li>Locate and download the chart/certification datasets.</li>
+<li>Land the data as tables/CSVs and wire them into the relevant notes above with <code>sql</code>/<code>python</code>/<code>mermaid</code> cells.</li>
+</ol>
+</article><aside class="note-meta"></aside>
+</main>
+<script src="../search.js" defer></script>
+</body>
+</html>
